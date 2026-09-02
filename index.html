@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com; font-src 'self'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://*.google-analytics.com; base-uri 'self'; form-action 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests" />
+<meta name="google-site-verification" content="tko4XSCFFi0CnRZKbEGQ4cmEZyuB2IogM9QYAfyuhWw" />
+
+<title>Quillino · Gestione affitti, canoni e scadenze fiscali</title>
+<meta name="description" content="Quillino è l'app di gestione affitti per piccoli proprietari: canoni di locazione, scadenze fiscali, adeguamento ISTAT e inquilini sotto controllo, senza fogli Excel. Report annuale pronto per il commercialista. Per iPhone, iPad, Mac e Apple Watch." />
+<meta name="author" content="Quillino" />
+<meta name="keywords" content="gestione affitti, app affitti, canone di locazione, cedolare secca, scadenze fiscali affitto, quietanza affitto, adeguamento ISTAT, gestione inquilini, piccoli proprietari, locazione iPhone" />
+
+<link rel="canonical" href="https://matteolubinu.github.io/quillino/" />
+
+<!-- Open Graph / social — URL assoluti: gli scraper (WhatsApp, iMessage, LinkedIn) non risolvono path relativi -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Quillino" />
+<meta property="og:url" content="https://matteolubinu.github.io/quillino/" />
+<meta property="og:title" content="Quillino · Gestione affitti, canoni e scadenze fiscali" />
+<meta property="og:description" content="Canoni, scadenze fiscali e inquilini sotto controllo. Report pronto per il commercialista. Senza fogli Excel." />
+<meta property="og:image" content="https://matteolubinu.github.io/quillino/assets/og-cover.png" />
+<meta property="og:image:width" content="2400" />
+<meta property="og:image:height" content="1260" />
+<meta property="og:image:alt" content="Quillino, gestione affitti sotto controllo: canoni, scadenze fiscali e inquilini su iPhone, iPad, Mac e Apple Watch" />
+<meta property="og:locale" content="it_IT" />
+
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Quillino · Gestione affitti, canoni e scadenze fiscali" />
+<meta name="twitter:description" content="Canoni, scadenze fiscali e inquilini sotto controllo. Report pronto per il commercialista. Senza fogli Excel." />
+<meta name="twitter:image" content="https://matteolubinu.github.io/quillino/assets/og-cover.png" />
+<meta name="twitter:image:alt" content="Quillino, gestione affitti sotto controllo" />
+
+<meta name="theme-color" content="#F6F6F6" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1A1E1A" media="(prefers-color-scheme: dark)" />
+
+<link rel="icon" href="assets/icon.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/icon.png" />
+<link rel="stylesheet" href="styles.css?v=20260902d" />
+
+<!-- Dati strutturati per i motori di ricerca -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Quillino — Gestione affitti",
+      "operatingSystem": "iOS, iPadOS, macOS, watchOS",
+      "applicationCategory": "FinanceApplication",
+      "url": "https://matteolubinu.github.io/quillino/",
+      "downloadUrl": "https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347",
+      "inLanguage": "it-IT",
+      "description": "App per piccoli proprietari immobiliari: tiene traccia di canoni, scadenze fiscali e inquilini, calcola l'adeguamento ISTAT, genera quietanze PDF e il report annuale per il commercialista. I dati restano sul dispositivo e, se scelto, si sincronizzano nel proprio iCloud.",
+      "screenshot": "https://matteolubinu.github.io/quillino/assets/screens/01-dashboard.png",
+      "offers": [
+        { "@type": "Offer", "name": "Gratis", "price": "0", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Quillino Pro — mensile", "price": "9.99", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Quillino Pro — annuale", "price": "59.99", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Quillino Pro — a vita", "price": "99.99", "priceCurrency": "EUR" }
+      ],
+      "publisher": { "@type": "Organization", "name": "Quillino", "url": "https://matteolubinu.github.io/quillino/", "logo": "https://matteolubinu.github.io/quillino/assets/icon.png", "email": "quillino.support@gmail.com" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "ratingCount": "4", "bestRating": "5", "worstRating": "1" },
+      "review": {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Piurishop" },
+        "datePublished": "2026-08-23",
+        "reviewBody": "Sicuramente la migliore app di questa categoria. Non manca niente, semplice da usare, intuitiva. Assistenza super, fondamentale e molto apprezzata. App in continua evoluzione. Consiglio a tutti, indistintamente dalla quantità di appartamenti o camere da gestire."
+      }
+    },
+    {
+      "@type": "WebSite",
+      "name": "Quillino",
+      "url": "https://matteolubinu.github.io/quillino/",
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Quanto costa Quillino?", "acceptedAnswer": { "@type": "Answer", "text": "Il primo immobile è gratuito per sempre. Quillino Pro parte da 9,99 € al mese o 59,99 € all'anno, con 7 giorni di prova e possibilità di annullare quando vuoi, oppure 99,99 € una volta sola, a vita e senza rinnovo. Pro sblocca immobili illimitati, il report fiscale, l'export CSV, le quietanze e i widget." } },
+        { "@type": "Question", "name": "I miei dati sono al sicuro?", "acceptedAnswer": { "@type": "Answer", "text": "Sì. Quillino non ha server propri: i dati restano sull'iPhone e, se attivi la sincronizzazione, viaggiano cifrati solo nel tuo iCloud personale. Nessun tracciamento, nessuna pubblicità. Puoi bloccare l'app con Face ID." } },
+        { "@type": "Question", "name": "Serve per la dichiarazione dei redditi?", "acceptedAnswer": { "@type": "Answer", "text": "Quillino prepara un report annuale di incassi e spese per immobile, con cedolare secca e regime IRPEF a confronto, e un'anagrafica con dati catastali, estremi di registrazione del contratto e canoni incassati mese per mese, da consegnare al commercialista. Non sostituisce il commercialista, ma fa risparmiare tempo a entrambi." } },
+        { "@type": "Question", "name": "Su quali dispositivi funziona?", "acceptedAnswer": { "@type": "Answer", "text": "iPhone, iPad, Mac con Apple Silicon e Apple Watch. Un unico acquisto vale su tutti i dispositivi Apple, con i dati sincronizzati via iCloud." } },
+        { "@type": "Question", "name": "Va bene per gli appartamenti affittati agli studenti?", "acceptedAnswer": { "@type": "Answer", "text": "Sì. Puoi gestire più inquilini nello stesso immobile con canoni per stanza e pagamenti separati, e inserire gli estremi di registrazione del contratto per ogni singolo inquilino, comodo quando ogni stanza ha il suo contratto." } },
+        { "@type": "Question", "name": "Posso gestire più immobili e coinquilini?", "acceptedAnswer": { "@type": "Answer", "text": "Sì. Con Pro gestisci immobili illimitati, incluse le situazioni con più inquilini nello stesso immobile: canoni per stanza e pagamenti separati." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Tema pre-paint (niente flash). File esterno per usare una CSP senza 'unsafe-inline'. -->
+<script src="boot.js?v=20260902d"></script>
+
+<!-- Google Analytics 4 con Consent Mode v2: analytics_storage negato finché
+     l'utente non accetta dal banner (vedi analytics.js + #cookieBanner + script.js). -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9974W2YSF0"></script>
+<script src="analytics.js?v=20260902d"></script>
+</head>
+<body>
+
+<!-- ============================================================ NAVBAR -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="Quillino">
+      <img class="logo" src="assets/icon.png" alt="" /> Quillino
+    </a>
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <a href="#funzioni">Funzioni</a>
+      <a href="#dispositivi">Dispositivi</a>
+      <a href="#prezzi">Prezzi</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alterna anteprima chiara/scura">
+        <svg class="ico-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        <svg class="ico-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn btn-primary nav-download" href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347">Scarica</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ============================================================== HERO -->
+<section class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Per chi affitta da 1 a 5 immobili</span>
+      <h1>L'affitto, finalmente <span class="accent">sotto controllo.</span></h1>
+      <p class="lead">Canoni, scadenze fiscali e inquilini in un'app sola. Sai sempre chi ha pagato e cosa scade, senza fogli Excel né promemoria sparsi.</p>
+      <div class="hero-actions">
+        <a class="appstore" href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347" aria-label="Scaricalo su App Store">
+          <img class="shot" data-light="assets/appstore-it.svg" data-dark="assets/appstore-it-white.svg" src="assets/appstore-it.svg" alt="" width="162" height="54" />
+        </a>
+        <a class="btn btn-ghost" href="#come-funziona">Scopri come funziona</a>
+      </div>
+      <p class="hero-reassure">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        Gratis per il primo immobile · nessuna carta richiesta
+      </p>
+    </div>
+    <div class="hero-media reveal">
+      <div class="device">
+        <img class="shot" data-light="assets/screens/01-dashboard.webp" data-dark="assets/screens/01-dashboard-dark.webp" src="assets/screens/01-dashboard.webp" alt="La dashboard di Quillino con l'incassato del mese e le prossime scadenze" width="900" height="1955" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= TRUST -->
+<section class="trust section-tight">
+  <div class="container trust-tags reveal">
+    <span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> I tuoi dati restano tuoi</span>
+    <span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Nessun tracciamento</span>
+    <span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg> Nessuna pubblicità</span>
+    <span class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-4.35-6-10a6 6 0 0 1 12 0c0 5.65-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg> Sviluppata in Italia</span>
+  </div>
+</section>
+
+<!-- ==================================================== COME FUNZIONA -->
+<section class="section-tight" id="come-funziona">
+  <div class="container reveal">
+    <span class="eyebrow">Si parte in cinque minuti</span>
+    <h2 class="section-title">Da zero a tutto in ordine, in tre passi.</h2>
+  </div>
+  <div class="container">
+    <div class="grid-cards">
+      <div class="card reveal">
+        <div class="ico num">1</div>
+        <h4>Aggiungi l'immobile e l'inquilino</h4>
+        <p>Nome, canone, deposito e date del contratto: bastano pochi campi per cominciare.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico num">2</div>
+        <h4>Segna i canoni quando li incassi</h4>
+        <p>Un tocco ogni mese. Quillino tiene il conto, evidenzia i ritardi e prepara la quietanza.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico num">3</div>
+        <h4>A fine anno esporti il report</h4>
+        <p>Incassi, spese e anagrafica immobili in un unico documento, pronto per il commercialista.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== FUNZIONI -->
+<section class="section" id="funzioni">
+  <div class="container center reveal">
+    <span class="eyebrow">Le basi, fatte bene</span>
+    <h2 class="section-title">Tutto quello che serve per gestire un affitto.<br>Niente di più.</h2>
+    <p class="section-lead">Quillino non è un gestionale complicato. Fa poche cose, quelle che contano davvero ogni mese.</p>
+  </div>
+
+  <div class="container" style="margin-top: clamp(48px, 8vw, 96px);">
+
+    <!-- Feature 1 -->
+    <div class="feat-row reveal">
+      <div class="feat-copy">
+        <div style="display:flex; gap:8px; margin-bottom:14px;">
+          <span class="badge badge--paid">Pagato</span>
+          <span class="badge badge--partial">Parziale</span>
+          <span class="badge badge--late">In ritardo</span>
+        </div>
+        <h3>Sai sempre chi ha pagato</h3>
+        <p>Segna un canone come incassato con un tocco. Quillino tiene il conto di ogni mese, evidenzia i ritardi e ti fa generare la quietanza PDF da consegnare all'inquilino.</p>
+        <ul class="feat-points">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Stato pagamento mese per mese</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Ritardi in evidenza, senza dover controllare</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Quietanza PDF pronta da inviare</li>
+        </ul>
+      </div>
+      <div class="feat-media"><div class="device"><img class="shot" data-light="assets/screens/03-pagamenti.webp" data-dark="assets/screens/03-pagamenti-dark.webp" src="assets/screens/03-pagamenti.webp" alt="Elenco pagamenti mensili con stato Pagato, Parziale e In ritardo" loading="lazy" /></div></div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="feat-row reverse reveal">
+      <div class="feat-copy">
+        <h3>Mai più una scadenza dimenticata</h3>
+        <p>Registro, cedolare secca, rinnovi e disdette: Quillino calcola le scadenze fiscali e contrattuali e te le ricorda in tempo, con l'aggiornamento ISTAT del canone già pronto.</p>
+        <ul class="feat-points">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Imposta di registro e cedolare secca</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Promemoria di rinnovo e disdetta</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Adeguamento ISTAT calcolato per te</li>
+        </ul>
+      </div>
+      <div class="feat-media"><div class="device"><img class="shot" data-light="assets/screens/04-scadenze.webp" data-dark="assets/screens/04-scadenze-dark.webp" src="assets/screens/04-scadenze.webp" alt="Elenco delle prossime scadenze fiscali e contrattuali" loading="lazy" /></div></div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="feat-row reveal">
+      <div class="feat-copy">
+        <span class="badge badge--pro" style="margin-bottom:14px;">Quillino Pro</span>
+        <h3>Il report pronto per il commercialista</h3>
+        <p>A fine anno esporti un quadro completo di incassi e spese per immobile — in PDF o CSV. E un'anagrafica separata con dati catastali, estremi di registrazione del contratto e i canoni incassati mese per mese: tutto in un unico documento per immobile, pronto da girare al commercialista.</p>
+        <ul class="feat-points">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Report fiscale annuale per immobile</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Anagrafica immobili: catasto, contratti, inquilini</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Canoni incassati mese per mese, per immobile o inquilino</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Cedolare secca e regime IRPEF a confronto · export CSV</li>
+        </ul>
+      </div>
+      <div class="feat-media"><div class="device"><img class="shot" data-light="assets/screens/05-report.webp" data-dark="assets/screens/05-report-dark.webp" src="assets/screens/05-report.webp" alt="Report fiscale annuale con incassi e spese" loading="lazy" /></div></div>
+    </div>
+
+  </div>
+
+  <!-- Feature grid -->
+  <div class="container">
+    <div class="grid-cards">
+      <div class="card reveal">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+        <h4>Immobili e inquilini</h4>
+        <p>Ogni immobile, stanza e inquilino in ordine: canone, deposito, contatti, dati catastali ed estremi del contratto — con un indicatore di quanto manca alla scheda per essere pronta per il commercialista.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg></div>
+        <h4>Solleciti WhatsApp</h4>
+        <p>Un tocco per inviare conferma di pagamento o sollecito su WhatsApp, con il messaggio già scritto.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+        <h4>Widget e Apple Watch</h4>
+        <p>L'incassato del mese e le scadenze direttamente in schermata Home e al polso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== RECENSIONI -->
+<section class="section reviews" id="recensioni">
+  <div class="container center reveal">
+    <span class="eyebrow">Cosa dicono i proprietari</span>
+    <div class="rating-line">
+      <span class="stars" role="img" aria-label="5 stelle su 5">★★★★★</span>
+      <span>5,0 su App Store</span>
+    </div>
+    <figure class="review-quote">
+      <blockquote>Sicuramente la migliore app di questa categoria. Non manca niente, semplice da usare, intuitiva. Assistenza super, fondamentale e molto apprezzata. App in continua evoluzione. Consiglio a tutti, indistintamente dalla quantità di appartamenti o camere da gestire.</blockquote>
+      <figcaption>Piurishop — recensione su App Store, agosto 2026</figcaption>
+    </figure>
+    <a class="btn btn-ghost" href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347">Leggi le recensioni</a>
+  </div>
+</section>
+
+<!-- ======================================================= DISPOSITIVI -->
+<section class="section" id="dispositivi">
+  <div class="container center reveal">
+    <span class="eyebrow">Un'app, tutti i tuoi schermi</span>
+    <h2 class="section-title">iPhone, iPad, Mac e Apple Watch.</h2>
+    <p class="section-lead">Un solo acquisto vale su tutti i dispositivi. I dati si sincronizzano in privato con il tuo iCloud: cominci sull'iPhone e ritrovi tutto sul Mac.</p>
+  </div>
+  <div class="container">
+    <div class="carousel reveal" id="deviceCarousel">
+      <div class="carousel-tabs" role="tablist" aria-label="Scegli il dispositivo">
+        <button class="ctab is-active" id="ctab-iphone" type="button" role="tab" aria-selected="true"  aria-controls="cpanel-iphone" tabindex="0"  data-device="iphone">iPhone</button>
+        <button class="ctab"           id="ctab-ipad"   type="button" role="tab" aria-selected="false" aria-controls="cpanel-ipad"   tabindex="-1" data-device="ipad">iPad</button>
+        <button class="ctab"           id="ctab-watch"  type="button" role="tab" aria-selected="false" aria-controls="cpanel-watch"  tabindex="-1" data-device="watch">Apple Watch</button>
+      </div>
+      <div class="carousel-stage">
+        <div class="cslide is-active" id="cpanel-iphone" role="tabpanel" aria-labelledby="ctab-iphone" data-device="iphone">
+          <div class="device"><img class="shot" data-light="assets/screens/01-dashboard.webp" data-dark="assets/screens/01-dashboard-dark.webp" src="assets/screens/01-dashboard.webp" alt="Quillino su iPhone" loading="lazy" /></div>
+        </div>
+        <div class="cslide" id="cpanel-ipad" role="tabpanel" aria-labelledby="ctab-ipad" data-device="ipad">
+          <div class="frame-ipad"><img class="shot" data-light="assets/screens/ipad.webp" data-dark="assets/screens/ipad-dark.webp" src="assets/screens/ipad.webp" alt="Quillino su iPad" loading="lazy" /></div>
+        </div>
+        <div class="cslide" id="cpanel-watch" role="tabpanel" aria-labelledby="ctab-watch" data-device="watch">
+          <div class="frame-watch"><img src="assets/screens/watch.webp" alt="Quillino su Apple Watch" loading="lazy" /></div>
+        </div>
+      </div>
+      <p class="carousel-hint">Scorri o tocca per cambiare dispositivo. Quillino è anche su Mac.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== PRIVACY -->
+<section class="privacy section">
+  <div class="container privacy-grid">
+    <div class="reveal">
+      <span class="eyebrow">Privacy prima di tutto</span>
+      <h2 class="section-title">I dati dei tuoi affitti restano dei tuoi affitti.</h2>
+      <p class="section-lead">Quillino non ha un server che raccoglie i tuoi dati. Tutto vive sul tuo iPhone e, se vuoi, si sincronizza cifrato nel tuo iCloud personale.</p>
+      <div class="privacy-list">
+        <div class="row">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+          <div><h4>Nessun account, nessun cloud di terzi</h4><p>Non serve registrarsi. I dati non passano da server nostri.</p></div>
+        </div>
+        <div class="row">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
+          <div><h4>Zero tracciamento</h4><p>Niente pubblicità, niente profilazione, nessuna rivendita dei tuoi dati.</p></div>
+        </div>
+        <div class="row">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div><h4>Blocco con Face ID</h4><p>Proteggi l'app con Face ID o codice: i dati dei tuoi inquilini restano riservati.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="feat-media reveal">
+      <div class="device"><img class="shot" data-light="assets/screens/08-privacy.webp" data-dark="assets/screens/08-privacy-dark.webp" src="assets/screens/08-privacy.webp" alt="Le impostazioni di privacy e blocco app di Quillino" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PREZZI -->
+<section class="section" id="prezzi">
+  <div class="container center reveal">
+    <span class="eyebrow">Prezzi onesti</span>
+    <h2 class="section-title">Quanto costa Quillino</h2>
+    <p class="section-lead">Il primo immobile è gratuito, per sempre. Quando gestisci di più, Quillino Pro sblocca tutto — con 7 giorni di prova, o a vita senza abbonamento.</p>
+  </div>
+  <div class="container">
+    <div class="price-grid">
+      <div class="price reveal">
+        <div class="tier">Gratis</div>
+        <div class="amount">€0<small> / per sempre</small></div>
+        <div class="sub">Per iniziare a mettere in ordine.</div>
+        <ul>
+          <li class="on"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 1 immobile</li>
+          <li class="on"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Pagamenti e scadenze</li>
+          <li class="on"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Solleciti WhatsApp</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347">Scarica gratis</a>
+      </div>
+      <div class="price pro reveal">
+        <span class="badge badge--pro price-tag">Consigliato</span>
+        <div class="tier gold">Quillino Pro</div>
+        <div class="amount">€59,99<small> / anno</small></div>
+        <div class="sub">7 giorni di prova, poi €59,99/anno. Annulli quando vuoi. Oppure €9,99/mese, o €99,99 una volta sola — a vita.</div>
+        <ul>
+          <li class="on gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Immobili illimitati</li>
+          <li class="on gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Report fiscale + export CSV</li>
+          <li class="on gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Quietanze PDF illimitate</li>
+          <li class="on gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Widget e Apple Watch</li>
+        </ul>
+        <a class="btn btn-gold" href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347">Prova Quillino Pro</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================== FAQ -->
+<section class="section" id="faq">
+  <div class="container center reveal">
+    <span class="eyebrow">Domande frequenti</span>
+    <h2 class="section-title">Le risposte veloci.</h2>
+  </div>
+  <div class="container">
+    <div class="faq-list">
+      <details class="faq reveal">
+        <summary>Quanto costa? <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="body">Il primo immobile è gratuito per sempre. Quillino Pro parte da €9,99 al mese o €59,99 all'anno — con 7 giorni di prova e possibilità di annullare quando vuoi — oppure €99,99 una volta sola, a vita e senza rinnovo. Pro sblocca immobili illimitati, report fiscale, export CSV, quietanze e widget.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>I miei dati sono al sicuro? <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="body">Sì. Quillino non ha server propri: i dati restano sul tuo iPhone e, se attivi la sincronizzazione, viaggiano cifrati solo nel tuo iCloud personale. Nessun tracciamento, nessuna pubblicità. Puoi anche bloccare l'app con Face ID.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Serve per la dichiarazione dei redditi? <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="body">Quillino prepara un report annuale chiaro di incassi e spese, con cedolare secca e regime IRPEF a confronto, più un'anagrafica con dati catastali, estremi di registrazione del contratto e i canoni incassati mese per mese. Tutto da consegnare al commercialista: non lo sostituisce, ma fa risparmiare tempo a entrambi.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Su quali dispositivi funziona? <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="body">iPhone, iPad, Mac con Apple Silicon e Apple Watch. Un unico acquisto vale su tutti i tuoi dispositivi Apple, con i dati sincronizzati via iCloud.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Va bene per gli appartamenti affittati agli studenti? <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="body">Sì. Puoi gestire più inquilini nello stesso immobile con canoni per stanza e pagamenti separati, e inserire gli estremi di registrazione del contratto per ogni singolo inquilino — comodo quando ogni stanza ha il suo contratto.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Posso gestire più immobili e coinquilini? <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="body">Sì. Con Pro gestisci immobili illimitati, incluse le situazioni con più inquilini nello stesso immobile (canoni per stanza) e i relativi pagamenti separati.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= CTA FINALE -->
+<section class="section cta-final">
+  <div class="container reveal">
+    <div class="cta-card">
+      <h2>Metti i tuoi affitti in ordine, oggi.</h2>
+      <p>Gratis per il primo immobile. Bastano pochi minuti.</p>
+      <div class="actions">
+        <a class="appstore" href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347" aria-label="Scaricalo su App Store">
+          <img class="shot" data-light="assets/appstore-it.svg" data-dark="assets/appstore-it-white.svg" src="assets/appstore-it.svg" alt="" width="162" height="54" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top"><img class="logo" src="assets/icon.png" alt="" /> Quillino</a>
+        <p class="desc">La gestione degli affitti per chi affitta in Italia.</p>
+      </div>
+      <div>
+        <h5>Prodotto</h5>
+        <ul>
+          <li><a href="#funzioni">Funzioni</a></li>
+          <li><a href="#dispositivi">Dispositivi</a></li>
+          <li><a href="#prezzi">Prezzi</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Scarica</h5>
+        <ul>
+          <li><a href="https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347">App Store</a></li>
+        </ul>
+        <h5 style="margin-top:22px;">Supporto</h5>
+        <ul>
+          <li><a href="mailto:quillino.support@gmail.com">quillino.support@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legale</h5>
+        <ul>
+          <li><a href="https://matteolubi.notion.site/Privacy-Policy-Quillino-36fed23c41248144a563e2d562760fc1" target="_blank" rel="noopener">Privacy Policy</a></li>
+          <li><a href="https://matteolubi.notion.site/Terms-of-Use-Quillino-371ed23c412481309acce049dfce1dbe" target="_blank" rel="noopener">Termini di Utilizzo (EULA)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Quillino. Tutti i diritti riservati.</span>
+      <span>Sviluppata con cura in Italia 🇮🇹</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Banner consenso cookie analytics -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Consenso cookie" hidden>
+  <p class="cookie-text">
+    Usiamo Google Analytics per capire come viene usato questo sito. Dati aggregati, nessuna pubblicità.
+    <a href="https://matteolubi.notion.site/Privacy-Policy-Quillino-36fed23c41248144a563e2d562760fc1" target="_blank" rel="noopener">Privacy Policy</a>
+  </p>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-btn cookie-btn--ghost" id="cookieReject">Rifiuta</button>
+    <button type="button" class="cookie-btn cookie-btn--accept" id="cookieAccept">Accetta</button>
+  </div>
+</div>
+
+<!-- FAB tema chiaro/scuro, solo mobile -->
+<button class="theme-toggle theme-fab" id="themeFab" type="button" aria-label="Alterna anteprima chiara/scura">
+  <svg class="ico-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+  <svg class="ico-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+
+<script src="script.js?v=20260902d"></script>
+</body>
+</html>
