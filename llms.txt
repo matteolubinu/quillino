@@ -1,0 +1,28 @@
+# Quillino
+
+> Quillino è un'app per iPhone, iPad, Mac e Apple Watch che aiuta chi affitta casa in Italia a tenere in ordine canoni, scadenze fiscali e inquilini. I dati restano sul dispositivo dell'utente (iCloud facoltativo): nessun account, nessuna pubblicità, nessun server nostro.
+
+Le cifre fiscali dell'app sono stime indicative e non sostituiscono il commercialista o un CAF.
+
+## Cosa fa
+- Segna l'affitto pagato con un tocco, anche a metà o diviso tra più inquilini; i ritardi restano in evidenza.
+- Calcola e ricorda le scadenze: imposta di registro, cedolare secca (acconto e saldo), rinnovi, disdette, aggiornamento ISTAT.
+- Gestisce stanze, comproprietà e più proprietari, spese per immobile con foto della ricevuta, solleciti WhatsApp.
+- Prepara il report annuale per il commercialista (Report 730, anagrafica degli immobili, CSV).
+
+## Quillino Host (affitti brevi, in arrivo)
+- App separata per chi affitta casa a brevi periodi in Italia: calendario dei canali (iCal), netto dopo commissioni e imposte, CIN, cedolare secca al 21% o 26%, scadenze, file per Alloggiati Web e ISTAT. Senza account, dati sul dispositivo. Il primo alloggio è gratuito. Non ancora su App Store.
+- [Pagina di Quillino Host](https://matteolubinu.github.io/quillino/host/)
+- [Guida: CIN per gli affitti brevi](https://matteolubinu.github.io/quillino/guida/cin-affitti-brevi.html)
+- [Guida: cedolare secca sugli affitti brevi](https://matteolubinu.github.io/quillino/guida/cedolare-secca-affitti-brevi.html)
+
+## Prezzi
+- Il primo immobile è gratuito, per sempre.
+- Quillino Pro: 59,99 euro all'anno (7 giorni di prova), 9,99 euro al mese, oppure 149,99 euro una volta sola, a vita. Prezzi in euro, IVA inclusa, da App Store.
+
+## Link
+- [Scheda App Store](https://apps.apple.com/it/app/quillino-gestione-affitti/id6774200347)
+- [Guida: acconto cedolare secca 2026](https://matteolubinu.github.io/quillino/guida/acconto-cedolare-secca-2026.html)
+- [Sito in inglese](https://matteolubinu.github.io/quillino/en/)
+- [Privacy Policy](https://matteolubi.notion.site/Privacy-Policy-Quillino-36fed23c41248144a563e2d562760fc1)
+- Assistenza: quillino.support@gmail.com
